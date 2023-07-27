@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+  }
+  input{
+    width: 500px;
+    height: 25px;
+  }
+  .submit{
+    position: relative;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    width: 300px;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-top: 20px;
+  }

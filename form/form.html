@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span class="error" id="nameError">Name is required.</span>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span class="error" id="emailError">Invalid email format.</span>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <span class="error" id="dateError">Date should be between 2000 and 2024.</span>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+    <span class="error" id="phoneError">Phone number should be in the format +212xxxxxxxxx.</span>
+
+    <label for="text">Text:</label>
+    <textarea id="text" name="text" ></textarea>
+    <span class="error" id="textError">Text is required.</span>
+
+    <input type="button" class="submit" onclick="onSubmit()" value="Submit">
+  </form>
+
+  <div id="thankYouMessage" style="display: none;">
+    <!-- Thank you message will be displayed here -->
+  </div>
+
+<script src="form.js"></script>
+</body>
+</html>
